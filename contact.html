@@ -1,0 +1,100 @@
+<html>
+<head>
+<script language="JavaScript" type="text/JavaScript">
+function sendrecord()
+{
+dname=document.forms[0].nm.value;
+dlname=document.forms[0].nme.value;
+dpass=document.forms[0].pss.value;
+dcpass=document.forms[0].pas.value;
+id=document.forms[0].eid.value;
+
+//dctop=document.forms[0].ct.value;
+phno=document.forms[0].pno.value;
+data=window.open("",""," height = 300,width = 350 ");
+data.document.write("<h2>New Record</h2>");
+data.document.write("<b>Name:</b>",dname," ",dlname);
+if(dpass==dcpass)
+{
+data.document.write("<br><b>Password:</b>",dpass);
+data.document.write("<br><b>Confirm Password:</b>",dcpass);
+}
+else
+{
+data.window.close();
+alert("Password and Confirm Password is not matched");
+}
+data.document.write("<br><b>E-mail Id :</b>",id)
+if(document.forms[0].g[0].checked)
+{
+data.document.write("<br><b>Gender:</b> Male");
+}
+else
+{
+data.document.write("<br><b>Gender:</b> Female");
+}
+data.document.write("<br><b>Ph Number:</b>",phno);
+
+}
+function confirmp()
+{
+document.getElementbyId("pmsg").innerHTML="Password and Confirm Password Doesn't Match";
+}
+
+</script>
+
+<link rel="stylesheet" type="text/css" href="dhtml.css">
+<title>Workout Trainer </title>
+</head>
+
+<body background="N/wood.jpg">
+<div id="a">
+<div id="b">
+<img src="N/19.jpg" width="100%" height="100%"/>
+</div>
+<center><font size="5" face="Times New Romon" color="red"><b>WORKOUT</b> is <b>PRAYER</b> for me and <b>GYM</b> is my <b>TEMPLE</b></font></center><hr color="yellow">
+<marquee onmouseover="stop()" onmouseout="start()"><font color="red" face="comic sans ms" size="7">CU'Z I liVe mY life liKe I'm a bEAST..</font></marquee> 
+<div id="c">
+<center><font color="White" size="7" face="forte">Menu</font></center>
+<font size="5">
+<ul> 
+<li><a href="home.html">Home</a></li>
+<li><a href="about.html">About Us</a></li>
+<li><a href="workout.html">Workouts</a></li>
+<li><a href="diet.html">Diet</a></li>
+<li><a href="Cardio.html">Cardio</a></li>
+<li><a href="images.html">Images</a></li>
+<li><a href="contact.html">Contacts Us</a></li>
+</ul>
+</font>
+</div>
+<div id="h">
+<table>
+<tr><td><font color="white">Email-Id</td> <td><font color="white">himanshugupta9467@gmail.com</td></tr>
+<tr><td><font color="white">Ph-No</td> <td><font color="white">9991109616<br></td></tr>
+<tr><td colspan="2">
+<br></td></tr>
+<form><font color="white">
+<tr><td><font color="white">First Name</td> <td> <input type="text" name="nm" id="dname" onFocus="this.value=''" value="Enter Name"></td></tr>
+<tr><td><font color="white">Last Name</td> <td> <input type="text" id="dlname" name="nme"onFocus="this.value=''" value="Last Name"></td></tr>
+<tr><td><font color="white">Password</td> <td> <input type="password" id="dpass" name="pss" onFocus="this.value=''" value="password"></td></tr>
+<tr><td><font color="white">Confirm Password</td> <td> <input type="password" id="dcpass" name="pas" onFocus="this.value=''" value="password"></td></tr>
+<tr><td><font color="white">Email-Id </td> <td> <input type="text" id="id" name="eid"onFocus="this.value=''" value="myId@example.com">
+</td></tr>
+<tr><td><font color="white">Gender </td> <td>
+<input type="radio" id="male" value="Male" name="g">Male
+<input type="radio" id="female" value="Female" name="g">Female</td></tr>
+<tr><td><font color="white">Ph-No </td> <td>
+<input type="text" id="phno" name="pno" id="no" onFocus="this.value=' ' " value="phone Number"></td></tr>
+<tr><td><input type="button" value="Sign In" onClick="sendrecord()" onKeyPress="sendrecord()"></td></tr>
+</form>
+</table>
+</div>
+
+<div id="f">
+<img src="N/2.jpg" height="100%" width="100%">
+</div>
+
+</div>
+</body>
+</html>

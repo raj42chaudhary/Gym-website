@@ -1,0 +1,117 @@
+#a
+{
+height:1200px;
+width:1300px;
+background-color:black;
+border:3px groove yellow;
+}
+#b
+{
+height:350px;
+width:1300px;
+}
+#c
+{
+height:430px;
+width:250px;
+background-image:N/wood.jpg;
+background-color:brown;
+border:3px groove yellow;
+float:left;
+}
+
+#g
+{
+height:220;
+width:530;
+}
+
+#d
+{
+height:430px;
+width:530px;
+background-image:N/wood.jpg;
+background-color:navy;
+border:3px groove yellow;
+float:left;
+}
+
+#e
+{
+height:430px;
+width:500px;
+background-image:N/wood.jpg;
+background-color:navy;
+border:3px groove yellow;
+float:left;
+}
+#f
+{
+background-color:brown;
+height:295px;
+width:1290;
+float:down;
+background-image:N/wood.jpg;
+border:3px groove yellow;
+}
+#h
+{
+height:430px;
+width:1295px;
+border:3px groove yellow;
+background-image:N/wood.jpg;
+background-color:navy;
+}
+
+#bb
+{
+height:330px;
+width:500px;
+float:left;
+}
+
+#dd
+{
+height:330px;
+width:500px;
+float:left;
+}
+a
+{
+color:limegreen;
+text-decoration:none;
+font:15px arial;
+
+}
+
+a:link
+{
+color:limegreen;
+text-decoration:none;
+font:15px arial;
+}
+/*
+a:visited
+{
+color:brown;
+text-decoration:none;
+font:15px arial;
+}
+*/
+
+a:hover
+{
+color:white;
+text-decoration:underline;
+font:15px arial;
+padding:3px;
+border:1px groove navy;
+}
+
+
+a:active
+{
+color:green;
+text-decoration:none;
+font:15px arial;
+}
